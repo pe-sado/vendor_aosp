@@ -228,4 +228,10 @@ $(call inherit-product, vendor/aosp/config/rro_overlays.mk)
 # Pixel Framework
 $(call inherit-product-if-exists, vendor/pixel-framework/config.mk)
 
+# Add Prebuilt Apps from Github
+$(call inherit-product, vendor/DuckDuckGo/config.mk)
+
+# Add Prebuilt GCAM
+$(call inherit-product, vendor/MGC/config.mk)
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
